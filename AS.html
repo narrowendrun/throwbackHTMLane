@@ -1,0 +1,387 @@
+<!DOCYPE html>
+<!--
+                                       _______________________________________________________________________________________
+                                       
+                                            Web page designed, developed and tested by Narendran
+                                            ............................................................................
+                                            Concept and ideas also by Narendran
+                                            ````````````````````````````````````````````````````````````````````````````
+                                            This webapage is entirely made only for entertainment purposes
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                            No quarks were harmed during the making of the webpage
+                                            ----------------------------------------------------------------------------
+                                            No nuetrinos were observed during the writing of this code
+                                            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                            Viewer discretion advised!
+                                            ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+                                            This is a work made possible by 10^(10^70) quantum number states 
+                                            along with several billions of septillions of other quarks and electrons
+                                        _______________________________________________________________________________________
+-->
+<link rel="shortcut icon" href="images/mario (1).ico" type="favicon/ico" sizes="256x256" />
+<style type="text/css">
+/* The quark vessel with all the infomration on quarks, slides to its position from the top */
+	@keyframes quarky{
+	from {top: -450vw;}
+	to {top: 5vw;}
+	}
+/* The quark table also slides from top to its position*/ 	
+	@keyframes antiquarky{
+	from{top:-250vw;}
+	tp{top: 100%;}
+	}
+/* The first line saying that they will be there */	
+	@keyframes tree{
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+/* Anytime now sentence */
+	@keyframes leaf{
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+/* Body will have only vertical scrolling and no horizontal scrolling */	
+	body{
+	overflow-x: hidden;
+	}
+/* This class contains the sentences that is displayed at the top of the webpage in beginning */
+	.timer{
+	font-family: "Century", "century Gothic"; font-size: 5vw;
+	position: fixed; left: 20%; text-align: center; 
+	transition: all 1s ease; opacity: 0;
+	top: 30%
+	}
+/* The first line */	
+	#three{
+	animation: tree 5s ease;
+	}
+/* The second line*/	
+	#leaf{
+	animation: leaf 5s ease; animation-delay: 4s;
+	}
+/* This is the first division of the page's background that is brownish? in color */	
+	#godseye {
+	background-color: #004D40; overflow: hidden;
+	width: 120vw; height: 60vh;
+	left: -5%; position: absolute;
+	top: 0%; z-index: -1;
+	transition: all 0.5s ease;
+	}
+/* THe second division of the page's background that is yellow? in color */	
+	#godseye2 {
+	background-color: #FF6F00; overflow: hidden;
+	width: 120vw; height: 70vh;
+	left: -5%; position: absolute;
+	top: 60vh; z-index: -1;
+	transition: all 0.5s ease;
+	}
+/* The various vessels of information */	
+	#upcharm, #antiupcharm, #baryomeso, #colorcharge {
+	position: absolute; width: 85%;
+	font-family: "Century", "Century Gothic", monospace; font-size: 2vw;
+	text-align: left; line-height: 150%;
+	border: solid #212121 1vw; overflow: hidden; 
+	transition: all 1s ease; padding: 3%;
+	}
+/* The main vessel that contains the general summary of quarks */	
+	#upcharm{
+	height: 60%; background-color: #00897B;
+	left: 2.55vw; top: 5vw;
+	z-index: 1; padding-bottom: 5%;	
+	border-bottom-left-radius: 50%; border-bottom-right-radius: 50%;
+	animation: quarky 15s ease; 
+	}
+/* The text boxes of all the vessels */	
+	#upcharm p{
+	width: 80%; margin: auto;
+	}
+/* The bowl shaped thing that is somewhere down the bigger vessel */	
+	#antiupcharm{
+	height: 30%; background-color: #006064;
+	border-bottom-left-radius: 50%; border-bottom-right-radius: 50%;
+	z-index: 2; padding-top: 5%;
+	top: 80%; 
+	}
+/* The green thing on the left of the vessel */	
+	#baryomeso{
+	background-color: #AFB42B; border-radius: 10vw;
+	top: -100%; transition: all 1s ease; z-index: 3;
+	line-height: 120%;
+	}
+/* The bordered rectangle that comes down when the vessel is clicked and held */	
+	#colorcharge{
+	background-color: #1B5E20; left: -85%;
+	top: -30%; border-top-right-radius: 80%;
+	border-top-left-radius: 80%; padding-top: 7%;	
+	height: 80%;
+	}
+/* Pretty self explonatory */	
+	#colorcharge:hover{
+	background-color: #4CAF50; transform: translate(95%, 25%);
+	}
+/* Pretty self explonatory */	
+	#colorcharge:hover #upcharm{
+	transform: scale(2);
+	}
+/* Pretty self explonatory */	
+	#antiupcharm:hover{
+	background-color: #00ACC1; transform: translateY(-120%);
+	}
+/* Pretty self explonatory */	
+	#upcharm:active #baryomeso{
+	background-color: #DCE775; transform: translateY(45vw); 
+	}
+/* Pretty self explonatory */	
+	#upcharm:hover{
+	background-color: #4DB6AC;
+	}
+/* Pretty self explonatory */	
+	#godseye2:hover{
+	background-color: #FFB300; 
+	}
+/* Pretty self explonatory */	
+	#godseye:hover{
+	background-color: #3E2723;
+	}
+/* The quarky table with all the information and images */	
+	#themquarks{
+	position: absolute; width: 60vw;
+	font-family: "Century Gothic", monospace; font-size: 2vw;
+	border: #212121 solid 0.25vw; border-collapse: collapse;
+	top: 100%; left: 20vw;
+	background-color: #B2EBF2; animation: antiquarky 15s ease;
+	z-index: 4;
+	}
+/* Pretty self explonatory */	
+	#themquarks img{
+	width: 100%; transition: all 0.5s ease;
+	}
+/* Pretty self explonatory */	
+	#themquarks img:hover{
+	transform: scale(0.8); opacity: 0.6;
+	}
+/* Pretty self explonatory */	
+	th, tr, td{
+	border: #212121 solid 0.25vw; border-collapse: collapse;
+	}
+/* Pretty self explonatory */	
+	td{
+	background-color: #455A64;
+	}
+/* The five rectangles all close to each other with different background colours will each show one word when hovered over */	
+	#colorbrick1, #colorbrick2, #colorbrick3, #colorbrick4, #colorbrick5{
+	position: absolute; top: 130vh;
+	left: 0%; background-color: black;
+	width: 20vw; height: 70vh; 
+	border: solid 0.1vw white; transition: all 1s ease;
+	border-collapse: collapse; z-index: 2;
+	}
+/* Pretty self explonatory */	
+	#colorbrick2{
+	left:20vw; background-color: #880E4F;
+	}
+/* Pretty self explonatory */	
+	#colorbrick3{
+	left: 40vw; background-color: #006064;
+	}
+/* Pretty self explonatory */	
+	#colorbrick4{
+	left: 60vw; background-color: #1B5E20;
+	}
+/* Pretty self explonatory */	
+	#colorbrick5{
+	left: 80vw; background-color: #1A237E;
+	}	
+/* Pretty self explonatory */	
+	#colorbrick1 p, #colorbrick2 p, #colorbrick3 p, #colorbrick4 p, #colorbrick5 p{
+	display: block; width: 100%;
+	margin: auto; position: absolute;
+	top: 50%; opacity: 0;
+	transition: all 1s ease; text-align: center;
+	font-family: "Century", monospace; font-size: 4vw;
+	color: black; font-weight: 300;
+	}
+/* Pretty self explonatory */	
+	#colorbrick1:hover p, #colorbrick2:hover p, #colorbrick3:hover p, #colorbrick4:hover p, #colorbrick5:hover p{
+	opacity: 1; background-image: url(images/back.jpg);
+	}
+/* The two images, space and professor utonium will have a layer containing text on them which will slide away when hovered over */	
+	#space, #utonium{
+	position: absolute;
+	width: 50vw; top: 200vh;
+	left: 0%; z-index: 2;
+	height: 50vh;
+	}
+/* Pretty self explonatory */	
+	#utonium{
+	left: 50vw;
+	}	
+/* Pretty self explonatory */	
+	.images{
+	width: 100%; transition: all 1s ease;
+	}
+/* The text present on that layer which is present on the images */	
+	.text{
+	position: absolute; overflow: hidden;
+	color: black; font-family: "Century";
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%); font-size: 5vw;
+	white-space: nowrap;
+	}
+/* The layer which holds the text */	
+	.overlayer{
+	position: absolute; overflow: hidden;
+	height: 100%; width: 100%; right: 0;
+	bottom: 0; background-color: #FFECB3;
+	transition: all 1s ease; opacity: 0.8;
+	}
+/* Pretty self explonatory */	
+	#utonium .overlayer{
+	left: 0;
+	}
+/* Pretty self explonatory */	
+	#space:hover .overlayer{
+	right: 100%;
+	}
+/* Pretty self explonatory */	
+	#utonium:hover .overlayer{
+	left: 100%;
+	}
+/* The last division of the page's background that say's that the user has reached the end of the webpage */	
+	#end{
+	width: 100vw; position: absolute;
+	top: 250vh; height: 50vh;
+	background-color: #2c3e50; left: 0%; 
+	font-size: 5vw; font-family: "Century";
+	font-weight: 900; color:#2c3e50; 
+	padding: 5%; transition: all 0.5s ease;
+	border-top: solid 0.1vw white; text-align: center; 
+	z-index: 2;
+	}
+/* Pretty self explonatory */	
+	#end:hover{
+	background-color: #ecf0f1;
+	}
+/* Pretty self explonatory */	
+	#end:hover #bumbutton{
+	opacity: 1;
+	}
+/* The button present in the last division increases in size when hovered over and changes color(s) */		
+	#bumbutton{
+	width: 15%; font-family: "Century";
+	position: absolute; left: 5%;
+	top: 70%; font-size: 3vw;
+	border-radius: 5vw; border: solid #2c3e50 0.5vw;
+	color: #2c3e50; background-color: #ecf0f1;
+	cursor: pointer; opacity: 0; 
+	transition: all 0.5s ease;
+	}
+/* Pretty self explonatory */	
+	#bumbutton:hover{
+	color: #ecf0f1; background-color: #2c3e50;
+	transform: scale(1.1);
+	}
+</style>
+<head>
+<title>Quarks</title>
+<p class="timer" id="three">They are going to be here!</p>
+<p class="timer" id="leaf">Right now!...Anytime now</p>
+</head>
+<body>
+<div id="godseye">
+</div>
+<div id="godseye2">
+</div>
+<div id="upcharm">
+<p>Quarks are fundamental constituents of matter that combine to form hadrons. The most commonly known hadrons that are formed by quarks are the baryons, protons and nuetrons.<br>
+The six "flavours" of quarks are: up, down, charm, strange, top and bottom.<br>
+<center>Hover to know more!<center></p>
+    <div id="antiupcharm">
+    	<p>As quarks are fundamental constituents of matter, they do have their counterparts, their anti-particles, the anti-quarks.<br>
+    <center>Click and hold to know more!</center><p>
+    </div>
+    
+    <div id="baryomeso">
+    	<p>Baryons are made up of three valence quarks. This means that inside every baryon there is a sea of quarks present. This means that there can be a strange and an anti-strange quark, a charm quark and an anti-charm quark and so on.<br>
+    The quarks annihilate when in contact with their anti-quarks, leaving only three valence quarks.</p>
+    </div>
+    
+    <div id="colorcharge">
+    	<p>Under the quantum chromodynamics theory quarks have a property called as colour charge.<br>
+    Though they are called "colours", they are not actual colours. The colour charges of the three valence quarks can either be red, green or blue and will add up to 0 thereby making the baryon "colourless" or white. Similarly, the colour of the anti-particle will be the particle's colour. So, a green charm quark's anti-charm quark will have an anti-green colour.</p>
+    </div>
+    
+</div>
+
+<table id="themquarks">
+    <thead>
+        <tr>
+            <th>Up</th>
+            <th>Down</th>
+            <th>Charm</th>
+            <th>Strange</th>
+            <th>Top</th>
+            <th>Bottom</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#upcharm"><img src="images/up_quark.jpg" alt="up quark"></a></td>
+            <td><a href="#"><img src="images/down_quark.jpg" alt="down quark"></a></td>
+            <td><a href="#"><img src="images/charm_quark.jpg" alt="charm quark"></a></td>
+            <td><a href="#"><img src="images/strange_quark.jpg" alt="strange quark"></a></td>
+            <td><a href="#"><img src="images/top_quark.jpg" alt="top quark"></a></td>
+            <td><a href="#upcharm"><img src="images/bottom_quark.jpg" alt="bottom quark"></a></td>
+        </tr>                  
+    </tbody>
+</table>
+
+<div id="colorbrick1">
+	<p>Humans</p>
+</div>
+
+<div id="colorbrick2">
+	<p>have been</p>
+</div>
+
+<div id="colorbrick3">
+	<p>thinking about</p>
+</div>
+
+<div id="colorbrick4">
+	<p> Quarks</p>
+</div>
+
+<div id="colorbrick5">
+	<p>since 1960s</p>
+</div>
+
+<div id="space">
+<img class="images" src="images/turrets.jpg" alt="image of a lot of turrets">
+<div class="overlayer">
+<div class="text"> These turrets!</div>
+</div>
+</div>
+
+<div id="utonium">
+<img class="images" src="images/utonium.jpg" alt="image of professor utonium">
+<div class="overlayer">
+<div class="text"> Professor Utonium!</div>
+</div>
+</div>
+
+<div id="end">
+	<p>Looks like this is the end!<br>Buh-bye!</p>
+    <a href="#upcharm"><button id="bumbutton">Go back</button></a>
+</div>
+
+</body>
+<!--								    ___________________________________________________________________________________
+                                            
+                                            In case you are copying any code from here,
+                                            Seriously? shame on you!
+                                            Try learning stuff and explore the numerous possibilities!
+                                            Oh by the way, you suck!
+                                        ___________________________________________________________________________________
+-->
+</html>

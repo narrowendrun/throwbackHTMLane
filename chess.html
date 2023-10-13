@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<link rel="icon" type="images/ico" href="prototypes/chess.ico">
+<style type="text/css">
+body{
+overflow: hidden;
+}
+#firstbg, #secondbg{
+border: #c0392b 0.5vw solid; border-collapse: collapse;
+}
+#firstbg{
+position: absolute; background-color: #212121;
+height: 49vh; width: 99vw;
+left: 0vw; top: 0vh;
+}
+#secondbg{
+position: absolute; background-color: #bdc3c7;
+height: 49vh; width: 99vw;
+left: 0vw; top: 49vh;
+}
+#chess{
+position: absolute; width: 40vw; 
+left: 30vw; border-collapse: collapse; 
+text-align: center; top: 10vh; 
+font: 1.5vw "Tahoma"; 
+}
+td {
+border: solid #3E2723 0.25vw;
+width: 4vw; height: 4vw;
+transition: all 0.1s ease; cursor: crosshair;
+}
+.head{
+background-color: #212121; font-size: 3vw;
+z-index: 1; 
+}
+.tail{
+background-color: #BDBDBD; font-size: 3vw;
+z-index: 1;
+}
+.tail:active, .head:active{
+background-color: #FAFAFA; color: #000000;
+}
+.label, .labelin{
+background-color: #5D4037; color: white;
+}
+.labelin{
+transform: rotate(180deg);
+}
+p{
+font-size: 1px; border: 51px solid #29B6F6; 
+border-radius: 1px; z-index: 2;
+color:#29B6F6; background-color: #29B6F6;
+}
+</style>
+<head>
+<title>Chess</title>
+</head>
+<body>
+<div id="firstbg">
+</div>
+<div id="secondbg">
+</div>
+<table id="chess">
+<tbody>
+<tr>
+<td class="label"></td>
+<td class="label">A</td>
+<td class="label">B</td>
+<td class="label">C</td>
+<td class="label">D</td>
+<td class="label">E</td>
+<td class="label">F</td>
+<td class="label">G</td>
+<td class="label">H</td>
+<td class="label"></td>
+</tr>
+<tr>
+<td class="label">1</td>
+<td class="tail" id="sq01">&#9814;</td>
+<td class="head" id="sq02">&#9816;</td>
+<td class="tail" id="sq03">&#9815;</td>
+<td class="head" id="sq04">&#9813;</td>
+<td class="tail" id="sq05">&#9812;</td>
+<td class="head" id="sq06">&#9815;</td>
+<td class="tail" id="sq07">&#9816;</td>
+<td class="head" id="sq08">&#9814;</td>
+<td class="labelin">1</td>
+</tr>
+<tr>
+<td class="label">2</td>
+<td class="head" id="sq09">&#9817;</td>
+<td class="tail" id="sq10">&#9817;</td>
+<td class="head" id="sq11">&#9817;</td>
+<td class="tail" id="sq12">&#9817;</td>
+<td class="head" id="sq13">&#9817;</td>
+<td class="tail" id="sq14">&#9817;</td>
+<td class="head" id="sq15">&#9817;</td>
+<td class="tail" id="sq16">&#9817;</td>
+<td class="labelin">2</td>
+</tr>
+<tr>
+<td class="label">3</td>
+<td class="tail" id="sq17"></td>
+<td class="head" id="sq18"></td>
+<td class="tail" id="sq19"></td>
+<td class="head" id="sq20"></td>
+<td class="tail" id="sq21"></td>
+<td class="head" id="sq22"></td>
+<td class="tail" id="sq23"></td>
+<td class="head" id="sq24"></td>
+<td class="labelin">3</td>
+</tr>
+<tr>
+<td class="label">4</td>
+<td class="head" id="sq25"></td>
+<td class="tail" id="sq26"></td>
+<td class="head" id="sq27"></td>
+<td class="tail" id="sq28"></td>
+<td class="head" id="sq29"></td>
+<td class="tail" id="sq30"></td>
+<td class="head" id="sq31"></td>
+<td class="tail" id="sq32"></td>
+<td class="labelin">4</td>
+</tr>
+<tr>
+<td class="label">5</td>
+<td class="tail" id="sq33"></td>
+<td class="head" id="sq34"></td>
+<td class="tail" id="sq35"></td>
+<td class="head" id="sq36"></td>
+<td class="tail" id="sq37"></td>
+<td class="head" id="sq38"></td>
+<td class="tail" id="sq39"></td>
+<td class="head" id="sq40"></td>
+<td class="labelin">5</td>
+</tr>
+<tr>
+<td class="label">6</td>
+<td class="head" id="sq41"></td>
+<td class="tail" id="sq42"></td>
+<td class="head" id="sq43"></td>
+<td class="tail" id="sq44"></td>
+<td class="head" id="sq45"></td>
+<td class="tail" id="sq46"></td>
+<td class="head" id="sq47"></td>
+<td class="tail" id="sq48"></td>
+<td class="labelin">6</td>
+</tr>
+<tr>
+<td class="label">7</td>
+<td class="tail" id="sq49">&#9823;</td>
+<td class="head" id="sq50">&#9823;</td>
+<td class="tail" id="sq51">&#9823;</td>
+<td class="head" id="sq52">&#9823;</td>
+<td class="tail" id="sq53">&#9823;</td>
+<td class="head" id="sq54">&#9823;</td>
+<td class="tail" id="sq55">&#9823;</td>
+<td class="head" id="sq56">&#9823;</td>
+<td class="labelin">7</td>
+</tr>
+<tr>
+<td class="label">8</td>
+<td class="head" id="sq57">&#9820;</td>
+<td class="tail" id="sq58">&#9822;</td>
+<td class="head" id="sq59">&#9821;</td>
+<td class="tail" id="sq60">&#9819;</td>
+<td class="head" id="sq61">&#9818;</td>
+<td class="tail" id="sq62">&#9821;</td>
+<td class="head" id="sq63">&#9822;</td>
+<td class="tail" id="sq64">&#9820;</td>
+<td class="labelin">8</td>
+</tr>
+<tr>
+<td class="label"></td>
+<td class="labelin">A</td>
+<td class="labelin">B</td>
+<td class="labelin">C</td>
+<td class="labelin">D</td>
+<td class="labelin">E</td>
+<td class="labelin">F</td>
+<td class="labelin">G</td>
+<td class="labelin">H</td>
+<td class="label"></td>
+</tr>
+</table>
+</body>
+</html>

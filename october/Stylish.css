@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Gravitas+One);
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+@keyframes arrowhead{
+50%{transform: translateX(25px);}
+}
+body{
+overflow-x: hidden;
+}
+#introduction, #patient, #happygroup, #provided, #doctors{
+position: absolute;
+left: 0;
+top: 800px;
+width: 100%;
+height: 850px;
+background: #FFCDD2;
+}
+#introduction{
+background: #9E9E9E;
+color: #212121;
+top: 0px;
+}
+#happygroup{
+height: 650px;
+top: 1650px;
+background: #C0CA33;
+}
+#provided{
+background-image: url("backg.jpg");
+font-family: "Bangers";
+font-size: 150px;
+text-align: center;
+height: 450px;
+top: 2300px;
+color: #1A237E;
+}
+#doctors{
+background: #8BC34A;
+color: #33691E;
+top: 2750px;
+font-family: "Bangers";
+font-size: 120px;
+height: 650px;
+}
+#deadboy{
+position: relative;
+top: 50px;
+left: 50px;
+height: 700px;
+width: 800px;
+border: double 25px transparent;
+transition: all 0.5s ease;
+}
+#arrow{
+position: relative;
+left: 70px;
+top: -50px;
+animation: arrowhead infinite 1s;
+}
+#medic{
+position: relative;
+left: 940px;
+width: 1000px;
+height: 600px;
+top: 100px;
+}
+#happypeople{
+position: relative;
+top: 50px;
+left: 1000px;
+width: 800px;
+height: 500px;
+border: double 25px transparent;
+transition: 0.5s all ease;
+}
+#ponnu{
+position: relative;
+top: 0px;
+width: 400px;
+height: 600px;
+left: 50px;
+border: double 25px transparent;
+transition: 0.5s all ease;
+}
+#surgeon{
+position: relative;
+top: 0px;
+width: 400px;
+height: 600px;
+left: 950px;
+border: double 25px transparent;
+transition: 0.5s all ease;
+}
+#happypeople:hover, #deadboy:hover{
+border: double 25px black;
+}
+#caption0{
+position: absolute;
+font-family: "Pacifico";
+font-size: 100px;
+top: 20px;
+left: 10px;
+}
+#caption1{
+color: #880E4F;
+position: absolute;
+font-family: "Bangers";
+font-size: 100px;
+left: 1000px;
+top: -50px;
+}
+#caption2{
+color: #827717;
+position: absolute;
+font-family: "Pacifico";
+font-size: 100px;
+left: 50px;
+top: -80px;
+}
+#caption3{
+position: absolute;
+left: 650px;
+top: 100px;
+}
+@keyframes the_gear{
+100%{transform: rotate(360deg);}
+}
+@keyframes the_gear2{
+100%{transform: rotate(-360deg);}
+}
+@keyframes the_gear3{
+100%{transform: rotate(360deg);}
+}
+#block1, #block2{
+position: absolute;
+width: 50%;
+height: 600px;
+left: 0px;
+top: 3400px;
+background: #FF9800;
+font-family: "Pacifico";
+font-size: 50px;
+line-height: 150%;
+}
+#block2{
+left: 50%;
+background: #FFC107;
+}
+#top_gear{
+position: relative;
+width: 20%;
+animation: the_gear infinite 5s linear;
+}
+#top_gear2{
+position: relative;
+top: 0px;
+left: -40px;
+width: 15%;
+animation: the_gear2 infinite 5s linear;
+}
+#top_gear3{
+position: relative;
+top: 60px;
+left: -340px;
+width: 10%;
+animation: the_gear2 infinite 5s linear;
+}
+#nanoparty{
+position: relative;
+top: 20px;
+left: 500px;
+width: 450px;
+height: 450px;
+}
+#caption4{
+position: absolute;
+text-align: right;
+padding: 20px;
+top: 50px;
+left: 0px;
+color: #B71C1C;
+}
+#caption5{
+position: absolute;
+text-align: left;
+padding: 20px;
+top: 120px;
+left: 0px;
+color: #004D40;
+}
+#nanti{
+position: relative;
+top: -400px;
+left: 10px;
+width: 500px;
+}
+@keyframes nanoxy{
+50%{transform: translateY(25px);}
+}
+#content{
+position: absolute;
+left: 0px;
+top: 4000px;
+width: 100%;
+background-image: url("radic.jpg");;
+height: 1750px;
+}
+#nanox, #nanox2, #nanox3{
+position: absolute;
+top: -20px;
+left: 100px;
+width: 40%;
+font-size: 50px;
+font-family: "Calibri";
+background: #4DB6AC;
+border-radius: 100px;
+padding: 50px;
+text-align: left;
+color: #212121;
+animation: nanoxy infinite 5s ease;
+}
+#nanox2{
+background: #A1887F;
+top: 250px;
+left: 1000px;
+animation-delay: 2s;
+}
+#nanox3{
+background: #FF8A65;
+top: 750px;
+animation-delay: 1s;
+}

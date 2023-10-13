@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<style type="text/css">
+	@import url(https://fonts.googleapis.com/css?family=Bangers);
+	@import url(https://fonts.googleapis.com/css?family=Pacifico);
+	@keyframes circle1{
+	50% {transform: translate(5vw, 5vw); background: #795548;;}
+	}
+	@keyframes circle2{
+	50% {transform: translate(-5vw, 5vw); background: #8BC34A;}
+	}
+	@keyframes circle3{
+	50% {transform: translate(0vw, -5vw); background: #FF5722;}
+	}
+	@keyframes dot1{
+	50%{transform: scale(0.375); opacity: 0.5;)}
+	}
+	@keyframes dot2{
+	50%{transform: scale(1.5); opacity: 1;)}
+	}
+	@keyframes orange_dot{
+	50%{transform: translate(0vw, 13.5vw); background: rgb(20, 20, 20);}
+	}
+	@keyframes grey_dot{
+	50%{transform: translate(0vw, -13.5vw); background: #FF5722;}
+	}
+	@keyframes yellow_dot{
+	50%{transform: translate(-13.5vw, 0vw); background: #3498db;}
+	}
+	@keyframes blue_dot{
+	50%{transform: translate(13.5vw, 0vw); background: #CDDC39;}
+	}
+	@keyframes planar{
+	100%{transform: rotateZ(360deg);}
+	}
+	@keyframes haha{
+	50%{transform: rotateZ(-180deg);}
+	}
+	@keyframes tri1{
+	50%{transform: translate(0vw, -2vw);}
+	}
+	@keyframes tri2{
+	70%{transform: translate(0vw, 2vw);}
+	}
+	@keyframes tri3{
+	80%{transform: translate(-2vw, 0vw);}
+	}
+	@keyframes tri4{
+	60%{transform: translate(2vw, 0vw);}
+	}
+	@keyframes loadot1{
+	50%{transform: rotate(360deg) scale(0.5);}
+	}
+	@keyframes loadot2{
+	50%{transform: rotate(360deg) scale(2);}
+	}
+	/*@keyframes body{
+	100%{opacity: 1;}
+	}*/
+	body{
+	background: rgb(20, 20, 20);  /*#ecf0f1*/	 
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	animation: body 5s 1 ease both;
+	animation-delay: 2s;
+	}	
+	.plate{
+	position:relative;;
+	background: #ecf0f1;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
+	border: double rgb(20, 20, 20) 1.5vw;
+	transition: all 1s ease;
+	}
+	.particle{
+	position: relative;
+	background: #FF5722;
+	width: 1.5vw;
+	height: 1.5vw;
+	border-radius: 50%;
+	left: 6.8vw;
+	animation: orange_dot 5s infinite ease;
+	}
+	#grey_dot{
+	background: rgb(20, 20, 20);
+	top: 12vw;
+	animation: grey_dot 5s infinite ease;
+	}
+	#blue_dot{
+	background: #3498db;
+	left: 0vw;
+	top: 3.5vw;
+	animation: blue_dot 5s infinite ease;
+	}
+	#yellow_dot{
+	background: #CDDC39;
+	left: 13.5vw;
+	top: 2vw;
+	animation: yellow_dot 5s infinite ease;
+	}
+	.loading{
+	position: absolute;
+	top: 50vh;
+	left: 20vw;
+	border-radius: 50%;
+	animation: haha 10s ease infinite;
+	border: #ecf0f1 0.5vw double;
+	width: 10vw;
+	height: 10vw;
+	animation-delay: 5s;
+	}
+	#loading1, #loading2, #loading3, #loading4{
+	border-radius: 50%;
+	background: #ecf0f1;
+	width: 2vw;
+	height: 2vw;
+	position: relative;
+	top: 2vw;
+	left: 2vw;
+	animation: dot1 2s infinite ease;
+	}
+	#loading2{
+	width: 1vw;
+	height: 1vw;
+	top: -0.5vw;
+	left: 3.5vw;
+	opacity: 0.5;
+	animation: dot2 2s infinite ease;
+	}
+	#loading3{
+	width: 2vw;
+	height: 2vw;
+	top: -0.5vw;
+	left: 4vw;
+	animation: dot1 3s infinite ease;
+	}
+	#loading4{
+	opacity: 0.5;
+	width: 2vw;
+	height: 2vw;
+	top: 0vw;
+	left: 5vw;
+	animation: dot2 2.5s infinite ease;
+	}
+	#kinni{
+	position: absolute;
+	left: 44vw;
+	top: 40vh;
+	transition: all 1s ease;
+	animation: planar 5s infinite linear;	
+	}
+	.triangles{
+	position: absolute;
+	width: 5vw;
+	height: 5vw;
+	top: 60vh;
+	right: 20vw;
+	}
+	#triangle_1, #triangle_2, #triangle_3, #triangle_4{
+	position: absolute;
+	width: 0vw;
+	height: 0vw;
+	border-top: #3498db 5vw double;
+	border-left: transparent 5vw double;
+	border-right: transparent 5vw double;
+	border-bottom: transparent 5vw double;
+	bottom: 0px;
+	animation: tri1 2s infinite ease;
+	}
+	#triangle_2{
+	border-bottom: #FF5722 5vw double;
+	border-left: transparent 5vw double;
+	border-right: transparent 5vw double;
+	border-top: transparent 5vw double;
+	animation: tri2 2s infinite ease;
+	}
+	#triangle_3{
+	border-left: #CDDC39 5vw double;
+	border-right: transparent 5vw double;
+	border-top: transparent 5vw double;
+	border-bottom: transparent 5vw double;
+	left: 0px;
+	animation: tri3 2s infinite ease;
+	}
+	#triangle_4{
+	border-right: #ecf0f1 5vw double;
+	border-bottom: transparent 5vw double;
+	border-left: transparent 5vw double;
+	border-top: transparent 5vw double;
+	left: 0px;
+	animation: tri4 2s infinite ease;
+	}
+	#circle1, #circle2, #circle3{
+	position: absolute; 
+	width: 10vw;
+	height: 10vw; 
+	border-radius: 50%;
+	top: 5vw; 
+	left: 5vw; 
+	opacity: 0.9;
+	transition: all 0.5s ease; 
+	z-index: 0;
+	animation: circle1 2s infinite reverse ease;
+	border: double rgb(20,20,20) 1vw;
+	background: #FF5722;
+	}
+	#circle2{
+	background: #795548;
+	left: 10vw; 
+	animation: circle2 2s infinite reverse ease;
+	}
+	#circle3{
+	background: #8BC34A;
+	top: 10vw; 
+	left: 7.5vw;
+	animation: circle3 2s infinite reverse ease;
+	}
+	#name{
+	font-family: "Pacifico";
+	font-size: 5vw;
+	position: absolute;
+	right: 8vw;
+	top: -8vh;
+	color: #ecf0f1;
+	}
+	#csss{
+	color: #CDDC39;
+	font-family: "Bangers";
+	font-size: 5vw;
+	position: absolute;
+	bottom: 0vh;
+	left: 6vw;
+	}
+	.hearty{
+	position: absolute;
+	right: 30vw;
+	top: 25vh;
+	}
+	#atria, #ventriola{
+	border-radius: 50%;
+	background: red;
+	position: absolute;
+	width: 5vw;
+	height: 5vw;
+	top: 0vw;
+	left: 0vw;
+	opacity: 0.5;
+	}
+	#ventriola{
+	left: 2.5vw;
+	}
+	#arota{
+	position: absolute;
+	width: 4.9vw;
+	height: 4.9vw;
+	background: red;
+	left: 1.25vw;
+	top: 1.2vw;
+	transform: rotate(-45deg);
+	opacity: 0.5;
+	}
+	#loading_circle, #loading_circle2{
+	border-radius: 50%;
+	/*border: solid yellow 0.5vw;*/
+	width: 10vw;
+	height: 10vw;
+	position: absolute;
+	animation: loadot1 2s infinite reverse;
+	left: 10vw;
+	top: 60vh;
+	}
+	#loading_circle2{
+	animation: loadot2 4s infinite forwards;
+	}
+	.loadots{
+	border-radius: 50%;
+	background: yellow;
+	width: 1vw;
+	height: 1vw;
+	left: 4.5vw;
+	position: relative;
+	}
+	#loadot2{
+	top: 17.5vh;
+	}
+</style>
+<head>
+<title>Standard Model</title>
+</head>
+<body>
+<div id="loading_circle">
+<div class="loadots" id="loadot1">
+</div>
+</div>
+<div id="loading_circle2">
+<div class="loadots" id="loadot2">
+</div>
+</div>
+<p id="name"><i>When CSS and HTML<br> work together</i></p>
+<p id="csss">Things like these can happen (just a sample)</p>
+<div class="loading">
+<div id="loading1">
+</div>
+<div id="loading2">
+</div>
+<div id="loading3">
+</div>
+<div id="loading4">
+</div>
+</div>
+<div id="kinni">
+<div class="plate">
+<div class="particle" id="orange_dot">
+</div>
+<div class="particle" id="grey_dot">
+</div>
+<div class="particle" id="blue_dot">
+</div>
+<div class="particle" id="yellow_dot">
+</div>
+</div>
+</div>
+<div class="triangles">
+<div id="triangle_1">
+</div>
+<div id="triangle_2">
+</div>
+<div id="triangle_3">
+</div>
+<div id="triangle_4">
+</div>
+</div>
+<div id="circle1">
+</div>
+<div id="circle2">
+</div>
+<div id="circle3">
+</div>
+<div class="hearty">
+<div id="atria">
+</div>
+<div id="ventriola">
+</div>
+<div id="arota">
+</div>
+</div>
+</body>
+</html>

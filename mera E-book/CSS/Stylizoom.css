@@ -1,0 +1,10 @@
+.magnify, .kaeo_ken {
+width: 60%; transition: all 1s ease;
+}
+.magnify:hover {
+width: 100%;
+}
+
+.kaeo_ken:hover {
+transform: scale(1.5);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<style>
+	@import url(https://fonts.googleapis.com/css?family=Pacifico);
+	@import url(https://fonts.googleapis.com/css?family=Bangers);
+	@keyframes color_changer{
+	5%{color: red;};
+	}
+	body{
+	overflow-x: hidden;
+	}
+	#back_panel1{
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	background: #2B2B2B;
+	width: 100vw;
+	height: 80vh;
+	z-index: -1;		
+	}
+	#back_panel2{
+	position: absolute;
+	top: 80vh;
+	left: 0vw;
+	background: #F6F6F6;
+	width: 100vw;
+	height: 80vh;
+	z-index: -1;
+	text-align: center;
+	font-size: 5vw;
+	font-family: "Bangers";	
+	}
+	#back_panel3{
+	position: absolute;
+	top: 160vh;
+	left: 0vw;
+	background: #F57F17;
+	width: 100vw;
+	height: 80vh;
+	z-index: -1;
+	text-align: center;
+	font-size: 5vw;
+	font-family: "Bangers";	
+	}
+	#welcome_circle{
+	position: absolute;
+	left: 34vw;
+	top: 10vh;
+	width: 30vw;
+	height: 30vw;
+	border-radius: 50%;
+	border: double 1vw #2B2B2B;
+	z-index: 1;
+	background: #FFF59D;
+	text-align: center;
+	font-family: "Pacifico";
+	font-size: 4vw;
+	color: #880E4F;
+	padding: 1vw;
+	}
+	#new{
+	animation: color_changer infinite 2s linear;
+	}
+	#sp1, #sp2, #{
+	animation: worddisplay 1s infinite ease;
+	}
+</style>
+<head>
+<title>A new start</title>
+</head>
+<body>
+<div id="back_panel1">
+</div>
+<div id="back_panel2">
+<p><br><br>Blah blah blah!<br>
+Woof woof meow ha</p>
+</div>
+<div id="welcome_circle">
+<p>Welcome!<br>
+This is a <span id="new">new</span> venture.</p>
+</div>
+<div id="back_panel3"> 
+<p>
+<span id="sp1">Itz</span><br>
+<span id="sp2">bitz</span><br>
+<span id="sp3">litz</span><br> 
+<span id="sp4">ditz</span>
+</p>
+</div>
+</body>
+</html>

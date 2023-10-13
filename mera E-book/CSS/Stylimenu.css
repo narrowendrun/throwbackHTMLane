@@ -1,0 +1,46 @@
+.first, .second, .third, .fourth, .fifth{
+position: absolute; width: 15%;
+margin-top: 1%; left: 20%;
+}
+.second{
+left: 40%;
+}
+.third{
+left: 58%; width: 25%;
+}
+.fourth, .fifth{
+margin-top: 20%; left: 28%;
+width: 20%;
+}
+.fifth{
+left: 53%; width: 15%;
+}
+.image{
+width: 100%; box-shadow: 20px 20px 20px #bdc3c7;
+}
+.lay_over{
+position: absolute; overflow: hidden;
+height: 0; width: 100%; right: 0;
+bottom: 0; background-color: #34495e;
+transition: all 1s ease; opacity: 0.8;
+}
+.text{
+position: absolute; overflow: hidden;
+color: white; font-family: "Arial";
+top: 50%; left: 50%;
+transform: translate(-50%, -50%); font-size: 25px;
+white-space: nowrap;
+}
+.first:hover .lay_over, .second:hover .lay_over, .third:hover .lay_over, .fourth:hover .lay_over, .fifth:hover .lay_over{
+height: 100%; 
+}
+.first:active .image, .second:active .image, .third:active .image, .fourth:active .image, .fifth:active .image{
+transform: translateY(20px);
+}
+.hehe{
+height: 100%;
+}
+#heading-om {
+color:#006; text-align:center; font:"Courier New", Courier, monospace; 
+font-size:30px;
+}

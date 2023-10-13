@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Gravitas+One);
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+    
+@keyframes starty{
+    from{top: -100vh;}
+    to{top: 10vh;}
+}
+body{
+    background-image: url(background.jpg);
+    overflow-x: hidden;
+}
+#quiz{
+    position: absolute;
+    left:35vw;
+    top: 10vh;
+    border-radius: 20%;
+    border: 1vw double black;
+    width: 30vw;
+    padding: 50px;
+    font-family: "Calibri";
+    font-size: 20px;
+    background: #f7f1e3;
+    animation: starty 1s 1 ease;
+    transition-delay: 0.5s;
+    transition-duration: 2s;
+}
+#textbox{
+    width: 250px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.smashbutton{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid 2px #2C3A47;
+    font: #2C3A47;
+    background: #EAB543;
+    transition: all 0.1s ease;		 
+}
+.smashbutton:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
+#submitbutt{
+    left: 35%;
+}
+.mcq input{
+    opacity: 0;
+    cursor: pointer;
+    background: #2C3A47;
+}
+#radiobutton{
+    position: relative;
+    top: 8px;
+    height: 25px;
+    opacity: 1;
+    width: 25px;
+    background: #2C3A47;
+    border-radius: 50%;
+}
+.mcq input:checked{
+    background: #FD7272;
+}
+#smashed{
+    opacity: 1;
+    position: absolute;
+    left: -150vw;
+    top: 0px;
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    font-family: "Bangers";
+    font-size: 5vw;
+    text-decoration: underline;
+    background: #EAB543;
+    transition: all 1s ease;
+    text-align: center;
+}
+#clickme{
+    position:absolute;
+    left: 45vw;
+    top: 20vh;
+    transform: scale(0);
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
+.rollers{
+    position: absolute;
+    right: 0.5vw;
+    top: 0vh;
+    width: 20vw;
+    height: 100vh;
+    border-radius: 0%;
+    background: #FFFFFF; 
+    animation: rollers 5s infinite linear;
+}

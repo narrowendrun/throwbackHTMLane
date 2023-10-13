@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<link rel="icon" href="AS/images/new.png" type="image/ico" sizes="256x256">
+<style type="text/css">
+	@keyframes one{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+	}
+	@keyframes two{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-360deg);}
+	}
+	@keyframes three{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+	}
+	@keyframes four{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-360deg);}
+	}
+	@keyframes five{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+	}
+	@keyframes six{
+	50%{transform: translate(2.5vw,2.5vw);}
+	}
+	@keyframes seven{
+	50%{transform: translate(-2.5vw,2.5vw);}
+	}
+	@keyframes eight{
+	50%{transform: translate(0,-2.5vw);}
+	}
+	body{
+	background: #311B92; z-index: -1;
+	}
+	#one{
+	background: #4527A0; position: absolute;
+	z-index: 0; width: 80vw;
+	left: 10vw; height: 80vh;
+	top: 10vh; animation: one linear 2s infinite;
+	transition: all 0.5s ease;
+	}
+	#two{
+	background: #512DA8; z-index: 1;
+	width: 64vw; left: 18vw;
+	position: absolute; height: 64vh;
+	top: 18vh; animation: two linear 4s infinite;
+	transition: all 0.5s ease;	
+	}
+	#three{
+	background: #5E35B1; z-index: 2;
+	width: 51.2vw; left: 24.4vw;
+	position: absolute; height: 51.2vh;
+	top: 24.4vh; animation: three linear 6s infinite;
+	transition: all 0.5s ease;
+	}
+	#four{
+	background: #673AB7; z-index: 3;
+	width: 40.96vw; left: 29.52vw;
+	position: absolute; height: 40.96vh;
+	top: 29.52vh; animation: four linear 8s infinite;
+	transition: all 0.5s ease;
+	}
+	#five{
+	background: #7E57C2; z-index: 4;
+	width: 32.768vw; left: 33.616vw;
+	position: absolute; height: 32.768vh;
+	top: 33.616vh; animation: five linear 10s infinite;
+	transition: all 0.5s ease;
+	}
+	#six, #seven, #eight{
+	background: #311B92; z-index: 5;
+	width: 5vw; left: 45vw;
+	position: absolute; height: 5vw;
+	top: 40vh; animation: six linear 1s infinite;
+	opacity: 0.6; transition: all 0.5s ease;
+	border-radius: 100%;
+	}
+	#seven{
+	left: 47.5vw; animation: seven linear 1s infinite;
+	}
+	#eight{
+	left: 46.25vw; top: 45vh; 
+	animation: eight linear 1s infinite;
+	}
+	#one:hover, #two:hover, #three:hover, #four:hover, #five:hover{
+	opacity: 0.5;
+	}
+</style>
+<head>
+<title>shades</title>
+</head>
+<body>
+<div id="one">
+</div>
+<div id="two">
+</div>
+<div id="three">
+</div>
+<div id="four">
+</div>
+<div id="five">
+</div>
+<div id="six">
+</div>
+<div id="seven">
+</div>
+<div id="eight">
+</div>
+</body>
+</html>

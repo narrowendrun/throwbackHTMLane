@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Gravitas+One);
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+@keyframes bounce{
+    70%{transform: translateX(15px);}
+}
+@keyframes entrance{
+    from{top:-150vw;}
+    to{top:150px;}
+}
+body{
+    font-size: 25px;
+    font-family: "Calibri";
+    background: #30336b;
+    overflow-x: hidden;  
+    background-image: url(back.jpg);
+	overflow: hidden;
+}
+#thequiz{
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    opacity: 0;
+}
+#entryform{
+    position: absolute;
+    background: #7efff5;
+    z-index: 1;
+    padding: 50px;
+    border-radius: 50px;
+    border: solid black 2px;
+    animation: entrance 1s 1 ease;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    top: 150px;
+    width: 250px;
+    left: 40%;
+    margin: auto;
+}
+.radbutts{
+    position: relative;
+    top: 5px;
+    left 0px;
+    height: 25px;
+    opacity: 1;
+    width: 25px;
+    background: #2C3A47;
+    border-radius: 50%;
+    padding: 20px;
+}
+.mcq input:checked{
+    background: #FD7272;
+}
+.mcq{
+    position: relative;
+    display: block;
+    background: #c7ecee;
+    padding: 50px;
+    border-radius: 50px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.mcq:hover{
+    background: white;
+}
+.questionpics{
+    position: absolute; 
+    display: block;
+    width: 20%;
+	top: 50px;
+    right: 20%;
+    border: double 20px #000000;
+    transition: all 0.5s ease;
+	opacity: 0;
+}
+.questionpics:hover{
+    transform: scale(2);
+}
+h1{
+   background: #7ed6df;
+    color: #130f40;
+    border-radius: 50px;
+    padding: 20px;
+    text-decoration: underline;
+    animation: bounce 0.5s infinite ease;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+#thetop{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0vh;
+    left: 0px;
+    background: transparent;
+}
+
+.smashbutton{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    left: 45%;
+    font-size: 30px;
+    border-radius: 20vw;
+    border: solid 2px #2C3A47;
+    transition: all 0.1s ease;
+    text-align: center;
+    text-overflow: hidden;
+}
+.smashbutton:hover{
+    cursor: pointer;
+    transform: rotateX(40deg);
+}
+#submitbutt{
+    left:50;
+}
+#textbox{
+    width: 250px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background: lightgrey;
+}
+#smashed{
+    opacity: 1;
+    position: absolute;
+    left: 0vw;
+    top: -100vh;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    font-family: "Bangers";
+    background: transparent;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+#message{
+    transition-delay: 2.5s;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    font-size: 90px;
+}
+#number_correct{
+    transition-delay: 2.5s;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    font-size: 50px;
+    text-decoration: none;
+}
+.rollers{
+    position: absolute;
+    top: -100vh;
+    width: 10vw;
+    height: 100vh;
+    border-radius: 0%;
+    background: #25CCF7; 
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+#roller1{
+    right: 0vw;
+}
+#roller2{
+    right: 10vw;
+    transition-delay: 0.2s;
+}
+#roller3{
+    right: 20vw;
+    transition-delay: 0.4s;
+}
+#roller4{
+    right: 30vw;
+    transition-delay: 0.6s;
+}
+#roller5{
+    right: 40vw;
+    transition-delay: 0.8s;
+}
+#roller6{
+    right: 50vw;
+    transition-delay: 1s;
+}
+#roller7{
+    right: 60vw;
+    transition-delay: 1.2s;
+}
+#roller8{
+    right: 70vw;
+    transition-delay: 1.4s;
+}
+#roller9{
+    right: 80vw;
+    transition-delay: 1.6s;
+}
+#roller10{
+    right: 90vw;
+    transition-delay: 1.8s;
+}
+#roller11{
+    right: 100vw;
+    transition-delay: 2s;
+}
+table, tr, th{
+    border: solid black 2px;
+    border-collapse: collapse;
+    text-decoration: none;
+    font-size: 25px;
+}
+tr{
+    font-size: 15px;
+}
+table{
+    font-family: "Calibri";
+    position: relative;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPhtml>
+<link href="scripts/Styly.css" rel = "stylesheet">
+<script src="scripts/Scripty.js"></script>
+<head>
+    <title>Quiz</title>       
+</head>
+<body>
+    <div id="thetop"></div> 
+    <div id="former">
+    <form id="entryform" name="entryform">
+    <p>Enter Name</p>
+                <input type = "text"  id = "textbox" name = "studentname"><br>
+    <p>Enter House</p>
+                <input type = "text"  id = "textbox" name = "studenthouse"><br>
+    <p>Enter Class</p>
+                <input type = "text"  id = "textbox" name = "studentclass"><br><br>
+        <a href="#thetop"><input type = "button" class = "smashbutton" id = "submitbutt" value = "Okay" onclick = "chucky();"></a>        
+    </form>
+    </div>
+
+    <h1 id="thenames"><center>Manthan Quiz</center></h1>
+    <form id="thequiz" name="thequiz">
+    <div class="mcq">
+        <p id="mcquestion1"></p>        				
+                <input type = "radio" class = "radbutts" id = "radiobutton1a" name = "question1" value = ""><span id="q1a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton1b" name = "question1" value = ""><span id="q1a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton1c" name = "question1" value = ""><span id="q1a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton1d" name = "question1" value = ""><span id="q1a4"></span><br>
+						<img class="questionpics" id="question1pic"src="images/question1.jpg">
+	</div>
+<br><br>                    
+    <div class="mcq">    
+        <p id="mcquestion2"></p>        				 
+                <input type = "radio" class = "radbutts" id = "radiobutton2a" name = "question2" value = ""><span id="q2a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton2b" name = "question2" value = ""><span id="q2a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton2c" name = "question2" value = ""><span id="q2a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton2d" name = "question2" value = ""><span id="q2a4"></span><br>
+						<img class="questionpics" id="question2pic"src="images/question2.jpg">
+    </div>
+<br><br>                    
+    <div class="mcq">    
+        <p id="mcquestion3"></p>                         
+                <input type = "radio" class = "radbutts" id = "radiobutton3a" name = "question3" value = ""><span id="q3a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton3b" name = "question3" value = ""><span id="q3a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton3c" name = "question3" value = ""><span id="q3a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton3d" name = "question3" value = ""><span id="q3a4"></span><br>
+						<img class="questionpics" id="question3pic"src="images/question3.jpg">
+    </div>   
+<br><br>                 
+	<div class="mcq">        
+        <p id="mcquestion4"></p>                      
+                <input type = "radio" class = "radbutts" id = "radiobutton4a" name = "question4" value = ""><span id="q4a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton4b" name = "question4" value = ""><span id="q4a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton4c" name = "question4" value = ""><span id="q4a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton4d" name = "question4" value = ""><span id="q4a4"></span><br>
+						<img class="questionpics" id="question4pic"src="images/question4.jpg">
+    </div>                
+<br><br>        
+    <div class="mcq">
+         <p id="mcquestion5"></p>                         
+                <input type = "radio" class = "radbutts" id = "radiobutton5a" name = "question5" value = ""><span id="q5a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton5b" name = "question5" value = ""><span id="q5a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton5c" name = "question5" value = ""><span id="q5a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton5d" name = "question5" value = ""><span id="q5a4"></span><br>
+						<img class="questionpics" id="question5pic"src="images/question5.jpg">	
+    </div>  
+<br><br>    
+    <div class="mcq">           
+        <p id="mcquestion6"></p>        				
+                <input type = "radio" class = "radbutts" id = "radiobutton6a" name = "question6" value = ""><span id="q6a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton6b" name = "question6" value = ""><span id="q6a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton6c" name = "question6" value = ""><span id="q6a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton6d" name = "question6" value = ""><span id="q6a4"></span><br>
+						<img class="questionpics" id="question6pic"src="images/question6.jpg">	
+    </div>
+<br><br>    
+    <div class="mcq">                       
+        <p id="mcquestion7"></p>        				
+                <input type = "radio" class = "radbutts" id = "radiobutton7a" name = "question7" value = ""><span id="q7a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton7b" name = "question7" value = ""><span id="q7a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton7c" name = "question7" value = ""><span id="q7a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton7d" name = "question7" value = ""><span id="q7a4"></span><br>
+						<img class="questionpics" id="question7pic"src="images/question7.jpg">
+    </div>
+<br><br>                    
+    <div class="mcq">    
+        <p id="mcquestion8"></p>           				 
+                <input type = "radio" class = "radbutts" id = "radiobutton8a" name = "question8" value = ""><span id="q8a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton8b" name = "question8" value = ""><span id="q8a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton8c" name = "question8" value = ""><span id="q8a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton8d" name = "question8" value = ""><span id="q8a4"></span><br>
+						 <img class="questionpics" id="question8pic"src="images/question8.gif">
+    </div>
+<br><br>                    
+    <div class="mcq">    
+        <p id="mcquestion9"></p>
+                <input type = "radio" class = "radbutts" id = "radiobutton9a" name = "question9" value = ""><span id="q9a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton9b" name = "question9" value = ""><span id="q9a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton9c" name = "question9" value = ""><span id="q9a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton9d" name = "question9" value = ""><span id="q9a4"></span><br>
+						<img class="questionpics" id="question9pic"src="images/question9.jpg">	
+    </div>
+<br><br>                        
+    <div class="mcq">    
+        <p id="mcquestion10"></p>        				
+                <input type = "radio" class = "radbutts" id = "radiobutton10a" name = "question10" value = ""><span id="q10a1"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton10b" name = "question10" value = ""><span id="q10a2"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton10c" name = "question10" value = ""><span id="q10a3"></span><br>
+                <input type = "radio" class = "radbutts" id = "radiobutton10d" name = "question10" value = ""><span id="q10a4"></span><br>
+						<img class="questionpics" id="question10pic"src="images/question10.jpg">	
+    </div>                
+                                                                                                           
+    </form> 
+        <a href="#thetop"><input type = "button" class = "smashbutton" value = "Submit" onclick = "check();"></a><br><br><br>  
+    
+<div id = "smashed">
+    <p id="message"></p>
+    <p id = "number_correct"></p>
+    <p>Student details</p>
+        <table align="center">
+        <tr>
+            <th>Student Name</th>
+            <th><p id="namevalue"></p></th>
+        </tr>
+        <tr>
+            <th>House</th>
+            <th><p id="housevalue"></p></th>
+        </tr>
+        <tr>
+            <th>Class</th>
+            <th><p id="classvalue"></p></th>
+        </tr>            
+    </table>
+</div>
+<div class="rollers" id="roller1">
+</div>
+<div class="rollers" id="roller2">
+</div>
+<div class="rollers" id="roller3">
+</div>
+<div class="rollers" id="roller4">
+</div>
+<div class="rollers" id="roller5">
+</div>
+<div class="rollers" id="roller6">
+</div>
+<div class="rollers" id="roller7">
+</div>
+<div class="rollers" id="roller8">
+</div>
+<div class="rollers" id="roller9">
+</div>
+<div class="rollers" id="roller10">
+</div>
+<div class="rollers" id="roller11">
+</div> 
+    
+</body>
+</html>

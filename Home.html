@@ -1,0 +1,42 @@
+<!DOCTYPEhtml>
+<link href = "Style-y.css" rel = "stylesheet">
+<link href = "https://fonts.google.com/?selection.family=Arimo" rel = "stylesheet">
+<script src = "Scripty.js">
+</script>
+
+<head>
+<title>Questionairre</title>
+</head>
+
+<body>
+    <form id = "quiz" name = "quiz">
+        <h1><center>The Skyrim Quiz</center></h1>
+            <p>What is the name for "dragon born" in Dragon Toungue?</p>
+                <input type = "text"  id = "textbox" name = "question1"><br>
+        
+            <p class = "mcq">Which one of the following formed Nirn?<br>
+                <input type = "radio" id = "radiobutton" name = "question2" value = "Lorkhan">Lorkhan<br>
+                <input type = "radio" id = "radiobutton" name = "question2" value = "Alduin">Alduin<br>
+                <input type = "radio" id = "radiobutton" name = "question2" value = "Paarthuranx">Paarthuranx<br>
+                <input type = "radio" id = "radiobutton" name = "question2" value = "Talos">Talos</p><br>
+            <p class="mcq">Which of the following species predominantly occupy Black Marsh?<br>
+                <input type="radio" id="radiobutton" name="question3" value="Khajiits">Khajiit<br>
+                <input type="radio" id="radiobutton" name="question3" value="Imperials">Imperials<br>
+                <input type="radio" id="radiobutton" name="question3" value="Dwarven People">Dwarven People<br>
+                <input type="radio" id="radiobutton" name="question3" value="Argonians">Argonians</p><br>
+        
+        <input type = "button" class = "smashbutton" id = "submitbutt" value = "Submit" onclick = "check();">
+        
+    </form>
+    
+<div id = "smashed">
+    <p id="message"></p>
+    <p id = "number_correct"></p>
+    <input type = "button" class = "smashbutton" id = "retrybutt" value = "Retry" onclick = "retry();">
+</div>
+<div class="rollers">
+</div>
+<a href="Home.html"><img id="clickme" src="click.jpeg"></a>
+    
+</body>
+</html>

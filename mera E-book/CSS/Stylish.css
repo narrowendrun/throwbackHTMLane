@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+background-image:url(images/minicons.png);
+}
+
+.butts_button {
+font-size: 20px; width: 20%; 
+padding: 15px 5px; border-radius: 15px;
+background-color: white; border: solid 5px #81C784;
+transition: all 0.3s ease; color: #388E3C; top: 3%;
+}
+.haha .butts_button{
+width: 80%;
+}
+
+.butts_button:hover {
+background-color: #81C784; transform:translateY(10px); 
+color: white; cursor: pointer;
+}
+
+.butts_button:active {
+transform: translateY(20px); transition: all 0.1s ease;
+}
+
+.butts_button a {
+text-decoration: none;
+}
+
+.haha {
+border: #0F9; padding: 10px;
+width: 20%; text-align:center;
+background-color: #FFF9C4; margin-left: -20%; 
+position: fixed; opacity: 0.6; 
+transition: all 1s ease; z-index: 2; 
+border: solid 5px black; height: 60%; 
+overflow-y: auto; overflow-x: hidden;
+}
+
+#contents-heading { 
+font-size: 40px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+border-bottom: ridge 10px #330066; transform: rotate(-90deg);
+position: absolute; right: -25%;
+top: 45%; transition: all 1s ease;
+visibility: hidden;
+}
+
+.haha:hover {
+opacity: 1; margin-left: 3%;
+}
+
+.haha:hover #contents-heading {
+opacity: 0; overflow: hidden;
+}
+
+.hehe {
+border: #6CF; background-color:#FFF ;
+margin-top:2% ; width: 91%; 
+position: absolute; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+font-size:20px; margin-left: 3%; 
+text-align: left; padding: 25px; 
+opacity: 0.9; transition: all 1s ease;
+}
+
+.hehe:hover {
+opacity: 1;
+}
+
+#heading-om {
+font-family:"Broadway", Monaco, monospace; font-size:25px;
+}
+
+#key1, #key2 {width: 10%; position: fixed; right: 06%; top: -4%; z-index: 1; opacity: 0.5; transition: all 0.6s ease;}
+#key2 {right: 85%;}
+#key1:hover, #key2:hover{
+opacity: 1;
+}
+
+
+
+
+
+
+
+
+
